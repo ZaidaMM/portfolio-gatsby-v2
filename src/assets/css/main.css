@@ -170,7 +170,7 @@ p {
 }
 /* added during recording */
 .underline {
-  width: 5rem;
+  width: 7rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
@@ -599,9 +599,9 @@ Jobs
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
-.job-info {
-  /* min-height: 420px; */
-}
+/* .job-info {
+  min-height: 420px;
+} */
 .job-info h3 {
   font-weight: 400;
 }
@@ -699,7 +699,7 @@ Projects
   color: var(--clr-primary-5);
   margin-bottom: 0.75rem;
 }
-.project-slug h3 {
+.project-slug {
   font-weight: 500;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
@@ -707,9 +707,9 @@ Projects
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
-.project-slug h3:hover {
+/* .project-slug h3:hover {
   color: var(--clr-primary-5);
-}
+} */
 .project-desc {
   word-spacing: 15px;
   color: var(--clr-grey-3);
