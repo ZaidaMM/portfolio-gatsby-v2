@@ -3,13 +3,15 @@ import { Link } from "gatsby"
 
 const ErrorPage = () => {
   return (
-    <>
-      <h1>404</h1>
-      <h3>Page not Found</h3>
-      <Link to="/" className="btn">
-        Back to Home
-      </Link>
-    </>
+    <main className="error-page">
+      <div className="error-container">
+        <h1>404</h1>
+        <h3>Page not Found</h3>
+        <Link to="/" className="btn">
+          Back to Home
+        </Link>
+      </div>
+    </main>
   )
 }
 export default ErrorPage

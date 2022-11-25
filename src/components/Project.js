@@ -15,8 +15,8 @@ const Project = ({ index, description, title, github, stack, url, image }) => {
         <h3 className="project-slug">{title}</h3>
         <p className="project-desc">{description.description}</p>
         <div className="project-stack">
-          {stack.tags.map(item => {
-            return <span key={item.id}>{item}</span>
+          {stack.tags.map((item, index) => {
+            return <span key={index}>{item}</span>
           })}
         </div>
         <div className="project-links">

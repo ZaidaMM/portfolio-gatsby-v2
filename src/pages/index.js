@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
+import About from "./about"
 import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
     <>
       <Hero />
       <Projects title="Projects" projects={projects} />
+      <About />
     </>
   )
 }

@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
 import pageLinks from "../constants/links"
-import logo from "../assets/images/logo.ico"
+// import logo from "../assets/images/logo.ico"
 
-const Navbar = () => {
+const Navbar = ({ toggleNavbar }) => {
   return (
     <>
       <nav className="navbar">
@@ -17,7 +17,7 @@ const Navbar = () => {
               {/* <img src={logo} alt="logo" /> */}
             </Link>
 
-            <button className="toggle-btn" type="button">
+            <button className="toggle-btn" type="button" onClick={toggleNavbar}>
               <FaAlignRight />
             </button>
           </div>

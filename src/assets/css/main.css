@@ -16,8 +16,8 @@ Variables
   --clr-primary-1: hsl(184, 91%, 17%);
   --clr-primary-2: hsl(185, 84%, 25%);
   --clr-primary-3: hsl(185, 81%, 29%);
-  --clr-primary-4: hsl(184, 77%, 34%);
   --clr-primary-5: #2caeba;
+  --clr-primary-4: hsl(184, 77%, 34%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -168,9 +168,9 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
+
 .underline {
-  width: 7rem;
+  width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
@@ -254,6 +254,21 @@ Navbar
 .nav-links {
   display: none;
 }
+
+.show-links {
+  height: 23.9375rem;
+}
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--grey-1000);
+  letter-spacing: var(--letterSpacing);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+}
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
@@ -332,8 +347,8 @@ Sidebar
 .close-btn {
   position: absolute;
   right: 4.75%;
-  top: 2.75%;
-  font-size: 2.5rem;
+  top: 4.75%;
+  font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-red-dark);
@@ -352,7 +367,7 @@ Sidebar Animation
 .sidebar-links li {
   animation: slideRight 0.5s ease-in-out 0.3s forwards;
 }
-.sidebar-links li:nth-of-type(1) {
+/* .sidebar-links li:nth-of-type(1) {
   animation-delay: 0.25s;
 }
 .sidebar-links li:nth-of-type(2) {
@@ -366,7 +381,7 @@ Sidebar Animation
 }
 .sidebar-links li:nth-of-type(5) {
   animation-delay: 1.25s;
-}
+} */
 @keyframes slideRight {
   0% {
     transform: translateX(-200px);
@@ -433,6 +448,7 @@ Hero
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
+  display: none;
 }
 .hero-info {
   background: var(--clr-grey-10);
@@ -462,7 +478,7 @@ Hero
     content: "";
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 55%;
     right: 0;
     bottom: 0;
     background: var(--clr-white);
@@ -602,9 +618,9 @@ Jobs
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
-/* .job-info {
+.job-info {
   min-height: 420px;
-} */
+}
 .job-info h3 {
   font-weight: 400;
 }
@@ -668,12 +684,12 @@ Projects
 }
 .project {
   display: grid;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .project-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 19rem;
+  height: 15rem;
   z-index: 1;
 }
 .project-img::after {
@@ -692,20 +708,21 @@ Projects
 }
 .project-info {
   background: var(--clr-white);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
 .project-number {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--clr-primary-5);
   margin-bottom: 0.75rem;
 }
 .project-slug {
   font-weight: 500;
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   color: var(--clr-grey-1);
   transition: var(--transition);
@@ -714,7 +731,7 @@ Projects
   color: var(--clr-primary-5);
 } */
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 3px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -746,12 +763,12 @@ Projects
 }
 @media screen and (min-width: 576px) {
   .project-img {
-    height: 19rem;
+    height: 15rem;
   }
 }
 @media screen and (min-width: 768px) {
   .project-img {
-    height: 22rem;
+    height: 18rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -763,7 +780,7 @@ Projects
     grid-column: 1 / span 8;
     /* grid-column-end: 8; */
     grid-row: 1 / 1;
-    height: 30rem;
+    height: 19rem;
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
   }
@@ -827,7 +844,7 @@ Pages
 .project-template-page,
 .projects-page,
 .error-page,
-.about-page,
+/* .about-page, */
 .contact-page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
@@ -835,11 +852,15 @@ Pages
 .error-page {
   display: grid;
   place-items: center;
-  background: var(--clr-primary-10);
+  background: var(--clr-grey-10);
   text-align: center;
 }
 .error-page h1 {
   text-transform: capitalize;
+  color: var(--clr-primary-1);
+  margin-bottom: 2.5rem;
+}
+.error-page h3 {
   color: var(--clr-primary-1);
   margin-bottom: 2.5rem;
 }
@@ -867,7 +888,7 @@ About Page
 ===============
 */
 .about-page {
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 .about-img {
   margin-bottom: 2rem;
@@ -875,7 +896,7 @@ About Page
 }
 .about-img-svg {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 28rem;
   width: 100%;
   display: block;
 }
@@ -888,7 +909,10 @@ About Page
   margin-right: 0;
 }
 .about-text p {
-  line-height: 2;
+  line-height: 1.75;
+}
+.about-text p:nth-of-type(3) {
+  margin-bottom: 3rem;
 }
 .stack-container {
   width: 30rem;
@@ -908,6 +932,7 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
