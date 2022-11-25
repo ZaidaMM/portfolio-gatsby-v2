@@ -20,7 +20,10 @@ const IndexPage = () => {
 
 const query = graphql`
   {
-    allContentfulProject(sort: { order: ASC, fields: order }) {
+    allContentfulProject(
+      filter: { featured: { eq: true } }
+      sort: { order: ASC, fields: order }
+    ) {
       nodes {
         id
         title
