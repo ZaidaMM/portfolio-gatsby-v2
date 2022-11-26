@@ -14,7 +14,7 @@ const IndexPage = () => {
   // console.log(projects)
   return (
     <>
-      <Seo title="Home" />
+      <Seo title="HomePage" />
       <main>
         <Hero />
         <Projects title="Projects" projects={projects} showLink />
