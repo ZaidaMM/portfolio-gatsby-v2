@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 const ErrorPage = () => {
   return (
     <>
-      <Seo title="Home" />
+      <Seo title="Not found page" />
       <main className="error-page">
         <div className="error-container">
           <h1>404</h1>

@@ -13,7 +13,7 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <Seo title="Home" />
+      <Seo title="Projects" />
       <main className="projects-page">
         <Projects title="All Projects" projects={projects} />
       </main>
