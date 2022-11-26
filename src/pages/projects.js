@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Projects from "../components/Projects"
+import Seo from "../components/Seo"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(query)
@@ -12,6 +13,7 @@ const ProjectsPage = () => {
 
   return (
     <>
+      <Seo title="Home" />
       <main className="projects-page">
         <Projects title="All Projects" projects={projects} />
       </main>

@@ -13,6 +13,11 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    title: "Zaida Montano Portfolio",
+    description: "Web Developer Portfolio build with Gatsby and Contentful",
+    author: "@zaida",
+  },
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -32,5 +37,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }

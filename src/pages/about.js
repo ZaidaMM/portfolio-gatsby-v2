@@ -2,10 +2,12 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Title from "../components/Title"
 import stackItems from "../constants/stack"
+import Seo from "../components/Seo"
 
 const About = () => {
   return (
     <>
+      <Seo title="About" />
       <section className="about-page">
         <div className="section-center about-center">
           <StaticImage
