@@ -19,8 +19,12 @@ const IndexPage = () => {
       <main>
         <Hero />
         <Projects title="Projects" projects={projects} showLink />
-        <AboutContent />
-        <ContactForm />
+        <div className="about-homepage">
+          <AboutContent />
+        </div>
+        <div className="contact-homepage">
+          <ContactForm />
+        </div>
       </main>
     </>
   )

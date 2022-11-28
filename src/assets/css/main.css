@@ -932,9 +932,14 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+.about-homepage {
+  background: var(--clr-white);
+  padding: 5rem;
+}
 
 @media screen and (min-width: 992px) {
-  .about-center {
+  .about-center,
+  .about-homepage {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
@@ -949,12 +954,14 @@ About Page
     grid-column: 6 / -1;
   }
 }
+
 /*
 ===============
 Contact Page
 ===============
 */
-.contact-page {
+.contact-page,
+.contact-homepage {
   display: grid;
   place-items: center;
   padding: 5rem 0;
