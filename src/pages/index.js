@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
 import About from "./about"
+import Contact from "./contact"
 import Seo from "../components/Seo"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
         <Hero />
         <Projects title="Projects" projects={projects} showLink />
         <About />
+        <Contact />
       </main>
     </>
   )
