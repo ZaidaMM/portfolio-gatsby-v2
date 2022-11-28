@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
 import pageLinks from "../constants/links"
-// import logo from "../assets/images/logo.ico"
+import logo from "../assets/images/logo.ico"
 
 const Navbar = ({ toggleNavbar }) => {
   return (
@@ -11,10 +11,10 @@ const Navbar = ({ toggleNavbar }) => {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <h2 className="logo">
+              {/* <h2 className="logo">
                 <span>ZM</span>
-              </h2>
-              {/* <img src={logo} alt="logo" /> */}
+              </h2> */}
+              <img src={logo} alt="logo" className="logo" />
             </Link>
 
             <button className="toggle-btn" type="button" onClick={toggleNavbar}>
