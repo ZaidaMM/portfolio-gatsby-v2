@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
-import About from "./about"
-import Contact from "./contact"
+import AboutContent from "../components/AboutContent"
+import ContactForm from "../components/ContactForm"
 import Seo from "../components/Seo"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -19,8 +19,8 @@ const IndexPage = () => {
       <main>
         <Hero />
         <Projects title="Projects" projects={projects} showLink />
-        <About />
-        <Contact />
+        <AboutContent />
+        <ContactForm />
       </main>
     </>
   )

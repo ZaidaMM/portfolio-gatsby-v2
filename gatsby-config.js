@@ -17,6 +17,8 @@ module.exports = {
     title: `Zaida Montano Portfolio`,
     description: `Web Developer Portfolio build with Gatsby and Contentful`,
     author: `@zaida`,
+    titleTemplate: `%s | Zaida Montano Portfolio`,
+    url: `https://zaida-montano-gatsby-portfolio.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
