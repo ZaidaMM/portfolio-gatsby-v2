@@ -5,13 +5,18 @@ import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({ index, description, title, github, stack, url, image }) => {
   return (
     <article className="project">
-      <a href={url} target="_blank" rel="noreferrer">
-        <GatsbyImage
-          image={getImage(image)}
-          className="project-img"
-          alt={title}
-        />
-      </a>
+      {/* <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        className="project-img-container"
+      > */}
+      <GatsbyImage
+        image={getImage(image)}
+        className="project-img"
+        alt={title}
+      />
+      {/* </a> */}
       <div className="project-info">
         <span className="project-number">{index + 1}.</span>
         <h3 className="project-slug">{title}</h3>
