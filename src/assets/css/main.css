@@ -1020,3 +1020,26 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+/*
+===============
+THEME MODE
+===============
+*/
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--clr-white);
+    background: var(--clr-grey-1);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--clr-white);
+  }
+} */
