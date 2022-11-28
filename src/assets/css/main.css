@@ -902,12 +902,14 @@ About Page
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
+  display: none;
 }
 .about-img-svg {
   margin-bottom: 2rem;
   height: 28rem;
   width: 100%;
-  display: block;
+  /* display: block; */
+  display: none;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -958,6 +960,7 @@ About Page
   .about-img-svg {
     grid-column: 1 / span 5;
     margin-bottom: 0;
+    display: block;
   }
   .about-text {
     grid-column: 6 / -1;
