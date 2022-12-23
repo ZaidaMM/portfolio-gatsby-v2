@@ -375,21 +375,7 @@ Sidebar Animation
 .sidebar-links li {
   animation: slideRight 0.5s ease-in-out 0.3s forwards;
 }
-/* .sidebar-links li:nth-of-type(1) {
-  animation-delay: 0.25s;
-}
-.sidebar-links li:nth-of-type(2) {
-  animation-delay: 0.5s;
-}
-.sidebar-links li:nth-of-type(3) {
-  animation-delay: 0.75s;
-}
-.sidebar-links li:nth-of-type(4) {
-  animation-delay: 1s;
-}
-.sidebar-links li:nth-of-type(5) {
-  animation-delay: 1.25s;
-} */
+
 @keyframes slideRight {
   0% {
     transform: translateX(-200px);
@@ -741,9 +727,7 @@ Projects
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
-/* .project-slug h3:hover {
-  color: var(--clr-primary-5);
-} */
+
 .project-desc {
   word-spacing: 3px;
   color: var(--clr-grey-3);
@@ -773,7 +757,6 @@ Projects
   transition: var(--transition);
 }
 .project-icon:hover {
-  /* color: var(--clr-primary-1); */
   color: var(--clr-primary-8);
 }
 @media screen and (min-width: 576px) {
@@ -792,14 +775,6 @@ Projects
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
-  /* .project-img {
-    grid-column: 1 / span 8;
-    grid-column-end: 8;
-    grid-row: 1 / 1;
-    height: 19rem;
-    border-radius: var(--radius);
-    box-shadow: var(--dark-shadow);
-  } */
   .project-info {
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
@@ -901,20 +876,10 @@ About Page
   padding: 5rem 0;
 }
 .about-img {
-  margin-bottom: 2rem;
-  height: 25rem;
   display: none;
-  box-shadow: var(--dark-shadow);
-  border-radius: var(--radius);
 }
 .about-img-svg {
-  margin-bottom: 2rem;
-  height: 28rem;
-  width: 100%;
-  /* display: block; */
   display: none;
-  border-radius: var(--radius);
-  box-shadow: var(--dark-shadow);
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -960,6 +925,21 @@ About Page
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     column-gap: 4rem;
+  }
+  .about-img {
+    margin-bottom: 2rem;
+    height: 25rem;
+    display: block;
+    box-shadow: var(--dark-shadow);
+    border-radius: var(--radius);
+  }
+  .about-img-svg {
+    margin-bottom: 2rem;
+    height: 28rem;
+    width: 100%;
+    display: none;
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
   }
   .about-img,
   .about-img-svg {
