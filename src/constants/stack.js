@@ -55,18 +55,22 @@ const data = [
   },
   {
     id: 14,
-    text: "Typescript",
+    text: "Jira",
   },
   {
     id: 15,
-    text: "GraphQl",
+    text: "Typescript",
   },
   {
     id: 16,
-    text: "Contentful",
+    text: "GraphQl",
   },
   {
     id: 17,
+    text: "Contentful",
+  },
+  {
+    id: 18,
     text: "Ruby",
   },
 ]
