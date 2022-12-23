@@ -346,10 +346,9 @@ Sidebar
   margin-bottom: 0.5rem;
   font-size: 2rem;
   transition: var(--transition);
-  border-radius: var(--radius);
 }
 .sidebar-links li a:hover {
-  background: var(--clr-primary-9);
+  box-shadow: 0px 2px var(--clr-primary-5);
   color: var(--clr-primary-5);
 }
 .close-btn {
