@@ -1,16 +1,18 @@
 import React from "react"
 import Title from "./Title"
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import stackItems from "../constants/stack"
 
 const AboutContent = () => {
   return (
     <>
-      <StaticImage
-        src="../assets/images/projects-3.jpg"
-        alt="about"
-        className="about-img-svg"
-      />
+      <div className="about-img-container">
+        <StaticImage
+          src="../assets/images/projects-3.jpg"
+          alt="about"
+          className="about-img-svg"
+        />
+      </div>
       <article className="about-text">
         <Title title="about" />
         <p>

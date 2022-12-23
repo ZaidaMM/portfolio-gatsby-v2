@@ -875,6 +875,9 @@ About Page
 .about-page {
   padding: 5rem 0;
 }
+.about-img-container {
+  display: none;
+}
 .about-img {
   display: none;
 }
@@ -926,6 +929,11 @@ About Page
     align-items: center;
     column-gap: 4rem;
   }
+  .about-img-container {
+    display: block;
+    height: 25rem;
+    width: 100%;
+  }
   .about-img {
     margin-bottom: 2rem;
     height: 25rem;
@@ -942,7 +950,8 @@ About Page
     box-shadow: var(--dark-shadow);
   }
   .about-img,
-  .about-img-svg {
+  .about-img-svg,
+  .about-img-container {
     grid-column: 1 / span 5;
     margin-bottom: 0;
     display: block;
