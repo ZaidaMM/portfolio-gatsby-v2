@@ -27,50 +27,54 @@ const data = [
   },
   {
     id: 7,
-    text: "Gatsby.js",
+    text: "Next.js",
   },
   {
     id: 8,
-    text: "React Native",
+    text: "Gatsby.js",
   },
   {
     id: 9,
-    text: "Sass",
+    text: "React Native",
   },
   {
     id: 10,
-    text: "Bootstrap",
+    text: "Sass",
   },
   {
     id: 11,
-    text: "Git",
+    text: "Bootstrap",
   },
   {
     id: 12,
-    text: "Github",
+    text: "Git",
   },
   {
     id: 13,
-    text: "Figma",
+    text: "Github",
   },
   {
     id: 14,
-    text: "Jira",
+    text: "Figma",
   },
   {
     id: 15,
-    text: "Typescript",
+    text: "Jira",
   },
   {
     id: 16,
-    text: "GraphQl",
+    text: "Typescript",
   },
   {
     id: 17,
-    text: "Contentful",
+    text: "GraphQl",
   },
   {
     id: 18,
+    text: "Contentful",
+  },
+  {
+    id: 19,
     text: "Ruby",
   },
 ]
